@@ -4,10 +4,10 @@
 ### a suggestion by Maxim Dounin. Also suggested in
 ### http://nginx.org/en/docs/http/request_processing.html#how_to_prevent_undefined_server_names.
 server {
-    listen [::]:80 default_server;
+    listen 8080 default_server;
     # Uncomment the line below and comment the above if you're
     # running a Nginx version less than 0.8.20.
-    # listen [::]:80 default;
+    # listen 8080 default;
 
     server_name _;
     return 444;
